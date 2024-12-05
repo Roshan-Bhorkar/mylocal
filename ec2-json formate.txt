@@ -8,7 +8,7 @@ ec2.json
 			"Type": "AWS::EC2::Instance",
 			"Properties": {
 				"ImageId": "ami-002829755fa238bfa",
-				"KeyName": "key vergenia",
+				"KeyName": "key.pem",
 				"BlockDeviceMappings": [{
 						"DeviceName": "/dev/xvda",
 						"Ebs": {
