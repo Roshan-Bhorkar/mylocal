@@ -1,0 +1,29 @@
+ec2.json
+
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "My CloudFormation Template",
+	"Resources": {
+		"MyEC2Instance": {
+			"Type": "AWS::EC2::Instance",
+			"Properties": {
+				"ImageId": "ami-002829755fa238bfa",
+				"KeyName": "key vergenia",
+				"BlockDeviceMappings": [{
+						"DeviceName": "/dev/xvda",
+						"Ebs": {
+							"VolumeType": "io2",
+							"Iops": 200,
+							"DeleteOnTermination": false,
+							"VolumeSize": 20
+						}
+					},
+					 
+						"DeviceName": "/dev/xvdb",
+						"NoDevice": {}
+					}
+				]
+			}
+		}
+	}
+}
