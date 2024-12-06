@@ -9,7 +9,7 @@ ec2.json
 			"Properties": {
 				"ImageId": "ami-002829755fa238bfa",
 				"KeyName": "key.vreginia",
-				"BlockDeviceMappings": [{
+				"BlockDeviceMappings":{
 						"DeviceName": "/dev/xvda",
 						"Ebs": {
 							"VolumeType": "io2",
@@ -22,8 +22,7 @@ ec2.json
 						"DeviceName": "/dev/xvdb",
 						"NoDevice": {}
 					}
-				]
+				
 			}
 		}
 	}
-}
